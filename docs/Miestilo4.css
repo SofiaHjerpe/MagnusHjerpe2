@@ -1,0 +1,466 @@
+*{
+    margin:0; 
+    padding:0;
+    
+}
+
+
+body {
+    max-width:1440px;
+   overflow-x: hidden;
+       overflow-y: inherit;
+    
+}
+
+.logo {
+    top:0px;
+    width: 60%;
+  
+}
+.logo img {
+
+    width: 100%;
+    
+}
+
+/*nav-bar forts*/
+ul{
+    list-style: none;
+  
+}
+.logonav {
+    top: 0;
+    margin-top: 0;
+width:1440px;
+height: 200px;
+    justify-content: space-between;
+      align-items: center;
+    display: flex;
+   
+      background-color:rgba(255, 237, 148,0.2);
+    font-weight: bold;
+         font-family:Montserrat;
+    font-size: 16px;
+    text-transform: none;
+    border: 2px solid white;
+    
+    
+}
+.menu-ctn li  {
+      align-items: center;
+
+    top: 0px;
+   right:0px;
+   flex-flow: wrap;
+   display: inline-block;
+    padding: 4px 15px;
+    color: rgb(0,0,0);
+    font-weight: normal;
+         font-family: 'Montserrat';
+    font-size: 16px;
+    transition: all 0.8s ease;
+ position: relative; 
+   
+}
+.menutjo {
+     font-weight: bold;
+         font-family: 'Montserrat';
+    font-size: 16px;
+    
+
+}
+#droptjo{
+    font-size: 14px;
+    
+}
+/*länkar får svart färg*/
+li a:link { 
+ color: rgb(0,0,0);
+     text-decoration: none;
+     font-weight: bold;
+         font-family: 'Montserrat';
+    font-size: 14px;
+   
+    
+}
+li a:visited {
+color: rgb(0,0,0);
+    text-transform: none;
+    
+}
+/*hover effekter*/
+.menu-ctn li:hover { 
+cursor: pointer; 
+background-color: rgba(36, 14, 6,0.5);
+  
+    
+}
+
+
+/* dropmeny startsida*/
+
+#droptjo { 
+    display:none;
+    position: absolute;
+    width: 100%;
+     text-transform: none;
+    background-color: #fff; 
+      z-index: 1;
+ text-align: center;
+    left: 0;
+    font-size: 14px;
+    top: 100%;
+           font-weight: normal;
+  justify-content: center;
+   
+
+}
+
+/* dropmeny galleri*/
+#dropgalleri { 
+    display:none;
+    position: absolute;
+    width: 100%;
+    text-transform: none;
+    background-color: #fff; 
+     z-index: 1;
+    text-align: center;
+   font-weight: normal;
+    left: 0;
+    font-size: 14px;
+    top: 100%;
+      justify-content: center;
+}
+
+
+
+
+/* dropmeny om mig*/
+#dropommig { 
+  display:none;
+    position: absolute;
+    width: 100%;
+    text-transform: none;
+     background-color: #fff; 
+  
+     z-index: 1;
+        text-align: center;
+  font-weight: normal;
+    left: 0;
+    font-size: 10px;
+    top: 100%;
+       
+ 
+      justify-content: center;
+}
+/* dropmeny kontakt*/
+#dropkontakt { 
+  display:none;
+    position: absolute;
+    width: 100%;
+    text-transform: none;
+    background-color: #fff; 
+       text-align: center;
+     z-index: 1;
+   font-weight: normal;
+    left: 0;
+    font-size: 14px;
+    top: 100%;
+       
+  justify-content: center;
+}
+
+/* dropmenyerna visas inte först*/
+
+
+/* dropmenyernas rubriker får en padding */
+#droptjo li {
+    padding: 5px 1px;
+    
+
+}
+#droptjo a:hover{
+    padding-left: 10px;
+}
+
+#dropgalleri li {
+    padding: 5px 15px;
+    
+
+}
+#dropgalleri a:hover{
+    padding-left: 10px;
+}
+
+#dropkontakt li {
+    padding: 5px 1px;
+    
+
+}
+#dropkontakt a:hover{
+    padding-left: 10px;
+}
+
+#dropommig li {
+    padding: 5px 1px;
+
+}
+#dropommig a:hover{
+    padding-left: 10px;
+}
+
+
+.navbar {
+    width: 300px; 
+    height: 100%;
+    background-color: #fff; 
+    position: fixed; 
+    top: 0;
+    right: -300px;
+    display: flex;
+    align-items: center;
+    border-radius: 0 0 0 0;
+     font-weight: bold;
+        font-family: 'Montserrat';
+    font-size: 16px;
+    
+    z-index: 1;
+        }
+
+.change {  
+right: 0; 
+}
+/*
+.nav-list {
+    text-align: right;
+    
+}*/
+.nav-item {
+    list-style: none; 
+    margin: 0 45px;
+    top:70px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-decoration: none;
+         font-family: 16px 'Montserrat';   
+        font-weight: normal;
+}
+
+.nav-item:hover {
+   cursor: pointer; 
+background-color: rgba(36, 14, 6,0.5);
+        padding-left:10px;
+}
+.hamburger-menu {
+    background-color: rgba(36, 14, 6,0.5);
+    width: 45px; 
+    height: 40px; 
+    position: fixed;  
+    margin-top:-320px;
+    left: 1350px;
+    cursor:pointer;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-style: solid;
+    border-width: 2px;
+    z-index: 1;
+    border-color: #000;
+     
+}
+
+.line {
+  align-items: center; 
+    width: 80%; 
+    height: 3px;
+    top:0; 
+    margin-left: 4px;
+    background-color: #000; 
+    font-size: 16px;
+    color: #000;
+    font-weight:300; 
+    transition: all 0.8s;
+
+    
+}
+
+.change .line-1{
+    transform: rotateZ(-45deg) translate(-8px, 10px);
+}
+.change .line-2 {
+    opacity: 0;
+}
+.change .line-3{
+    transform: rotateZ(45deg)translate(-8px, -11px);
+}
+
+.kontaktcontainer{
+    background-color:rgba(36, 14, 6,0.5);
+    width: 1440px;
+    height:600px;
+     z-index: -1;
+    
+}
+.cont{
+     font-weight: bold;
+        font-family: 'Montserrat';
+    font-size: 16px;
+    color:#fff;
+    
+}
+a{
+    color:white;
+}
+a:visited{
+    color:white;
+}
+.enlank .fab .far {
+     font-weight: normal;
+        font-family: 'Montserrat';
+    font-size: 12px;
+    z-index: 2;
+    margin: 0 0 20px;
+    padding:0;
+    
+}
+.blurrycontainer {
+    position: relative;
+    max-width: 600px;
+    padding: 50px;
+    box-shadow: 0px, 15px, 25px rgba(0,0,0,0.5);
+    overflow: hidden;
+    color:#fff;
+    border: #000 solid;
+    
+    z-index: 1;
+
+    
+}
+
+.container{ 
+max-width: 1970px;
+margin: auto;
+   
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 600px;
+}
+ul {
+    list-style: none;
+}
+.footer {
+    background-color: rgba(255, 237, 148,0.2);
+    padding 70px 0; 
+}
+
+.footer-col{
+    width:15%;
+    padding: 0px;   
+}
+
+.footer-col h4 {
+     font-weight: bold;
+         font-family: 'Montserrat';
+    font-size: 16px;
+    color:#000; 
+    margin-bottom:35px; 
+   
+    position: relative; 
+    
+}
+.footer-col h4::before{
+content:'';
+    position: absolute;
+    left:0;
+    bottom:-10px;
+    background-color: rgba(36, 14, 6);
+    height: 2px; 
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 14px;
+    color:#000;
+    font-family: 'Montserrat';
+          font-weight: normal;
+    display: block;
+    transition: all 0.3 ease;
+    text-decoration: none;
+}
+.footer-col ul li a:hover{
+  color: rgba(36, 14, 6,0.5);
+    padding-left: 10px;
+    
+}
+
+/*sociala iconer*/
+   
+
+
+.far {
+     cursor: pointer;
+ display: inline-block; 
+    background-color:rgba(36, 14, 6);
+    padding: 9px 10px;
+    margin: 0 2px;
+    z-index: 1;
+    
+    
+}
+.fab{
+    background-color:rgba(36, 14, 6);
+      cursor: pointer;
+ display: inline-block; 
+    padding: 9px 10px;
+    margin: 0 2px;
+    z-index: 1;
+}
+.fab fa-facebook-f {
+    margin-bottom: 20px;
+       cursor: pointer;
+ display: inline-block; 
+   
+    padding: 9px 10px;
+    margin: 0 2px;
+    z-index: 1;
+}
+
+.fab fa-spotify {
+  top:20px;
+    
+     cursor: pointer;
+ display: inline-block; 
+    background-color: rgb(36, 14, 6);
+    padding: 7px 8px;
+    margin: 0 2px;
+    z-index: 1;
+    
+}
+
+ .fab {
+    color:#fff;
+      display: inline-block; 
+
+}
+
+.far {
+    color:#fff;
+     display: inline-block; 
+
+}
+
+.fab:hover { 
+    cursor: pointer;
+    background-color: rgba(36, 14, 6,0.5); 
+}
+.far:hover { 
+    background-color: rgba(36, 14, 6,0.5); 
+
+}
+ 

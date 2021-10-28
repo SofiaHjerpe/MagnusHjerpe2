@@ -1,0 +1,254 @@
+/* hela sidan*/ 
+*{
+    padding: 0;
+        margin: 0;
+
+     
+}
+
+/* logga*/
+.logo22 {
+    top:0px;
+    width: 60%;
+  
+}
+.logo22 img {
+
+    width: 100%;
+    
+}
+
+/*nav-bar forts*/
+ul{
+    list-style: none;
+  
+}
+.minnavbar {
+    top: 0;
+    margin-top: 0;
+width:1440px;
+height: 200px;
+    justify-content: space-between;
+      align-items: center;
+    display: flex;
+   
+      background-color:rgb(252,252,234);
+    
+    
+}
+.menu2 li  {
+
+
+
+      align-items: center;
+  background-color:rgb(252,252,234);
+    top: 0px;
+   right:0px;
+   flex-flow: row no-wrap;
+   display: inline-block;
+    padding: 4px 15px;
+    color: rgb(0,0,0);
+ font: 16px Montserrat; 
+    font-weight: bold;
+    transition: all 0.8s ease;
+ position: relative; 
+}
+/*länkar får svart färg*/
+li a:link { 
+ color: rgb(0,0,0);
+    text-decoration: none;
+    
+}
+li a:visited {
+color: rgb(0,0,0);
+    text-decoration: none;
+}
+/*hover effekter*/
+.menu2 li:hover { 
+cursor: pointer; 
+background-color: rgba(122,204,224,0.75);
+    
+}
+
+
+/* dropmeny startsida*/
+
+#droptjo2 { 
+    display:none;
+    position: absolute;
+    width: 100%;
+     text-transform: none;
+    background-color: #fff; 
+      z-index: 1;
+ text-align: center;
+    left: 0;
+    font-size: 10px;
+    top: 100%;
+           font-weight: normal;
+  justify-content: center;
+   
+
+}
+
+/* dropmeny galleri*/
+#dropgalleri2 { 
+    display:none;
+    position: absolute;
+    width: 100%;
+    text-transform: none;
+    background-color: #fff; 
+     z-index: 1;
+    text-align: center;
+   font-weight: normal;
+    left: 0;
+    font-size: 10px;
+    top: 100%;
+      justify-content: center;
+}
+
+
+
+
+/* dropmeny om mig*/
+#dropommig2 { 
+  display:none;
+    position: absolute;
+    width: 100%;
+    text-transform: none;
+    background-color: rgb(252,252,234);
+     z-index: 1;
+        text-align: center;
+  font-weight: normal;
+    left: 0;
+    font-size: 10px;
+    top: 100%;
+       
+ 
+      justify-content: center;
+}
+/* dropmeny kontakt*/
+#dropkontakt2 { 
+  display:none;
+    position: absolute;
+    width: 100%;
+    text-transform: none;
+    background-color: white; 
+       text-align: center;
+     z-index: 1;
+   font-weight: normal;
+    left: 0;
+    font-size: 10px;
+    top: 100%;
+       
+  justify-content: center;
+}
+
+/* dropmenyerna visas inte först*/
+
+
+/* dropmenyernas rubriker får en padding */
+#droptjo2 li {
+    padding: 5px 1px;
+    
+
+}
+
+#dropgalleri2 li {
+    padding: 5px 15px;
+    
+
+}
+
+#dropkontakt2 li {
+    padding: 5px 1px;
+    
+
+}
+
+#dropommig2 li {
+    padding: 5px 1px;
+
+}
+
+
+.navbar2 {
+    width: 300px; 
+    height: 100%;
+    background-color: #fff; 
+    position: fixed; 
+    top: 0;
+    right: -300px;
+    display: flex;
+    align-items: center;
+    border-radius: 0 0 0 0;
+     font-weight: bold;
+        font-family: 16px Montserrat;
+    z-index: 1;
+        }
+
+.change {
+    
+right: 0; 
+}
+/*
+.nav-list {
+    text-align: right;
+    
+}*/
+.l-item {
+    list-style: none; 
+    margin: 0 45px;
+    top:70px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-decoration: none;
+         font-family: 16px Montserrat;
+}
+
+.l-item:hover {
+   cursor: pointer; 
+background-color: rgba(122,204,224,0.75);
+}
+.hamburger-menu2 {
+    background-color: rgba(122,204,224);
+    width: 45px; 
+    height: 40px; 
+    position: fixed;  
+    margin-top:-320px;
+    left: 1350px;
+    cursor:pointer;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-style: solid;
+    border-width: 2px;
+    z-index: 1;
+    border-color: #000;
+     
+}
+
+.line {
+  align-items: center;
+    
+    width: 80%; 
+    height: 3px;
+    top:0; 
+    margin-left: 4px;
+    background-color: #000; 
+    font-size: 14px;
+    color: #000;
+    font-weight:300; 
+    transition: all 0.8s;
+
+    
+}
+
+.change .line-1{
+    transform: rotateZ(-45deg) translate(-8px, 10px);
+}
+.change .line-2 {
+    opacity: 0;
+}
+.change .line-3{
+    transform: rotateZ(45deg)translate(-8px, -11px);
+}
